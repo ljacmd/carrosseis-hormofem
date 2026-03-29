@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de Carrosseis — Dr. Leonardo Jacobsen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #EEECE8;
+      color: #222;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #222335;
+      color: white;
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      color: #B6CCE1;
+      font-size: 0.85rem;
+    }
+
+    .shelf-label {
+      text-align: center;
+      padding: 28px 24px 8px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+      gap: 16px;
+      padding: 12px 28px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      cursor: pointer;
+      transition: transform 0.18s, box-shadow 0.18s;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.06);
+    }
+
+    .card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.16);
+    }
+
+    .card-cover {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #f5f4f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .card-info {
+      padding: 9px 10px 10px;
+      border-top: 1px solid #f0eeea;
+    }
+
+    .card-title {
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: #222335;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-count {
+      font-size: 0.68rem;
+      color: #aaa;
+      margin-top: 3px;
+    }
+
+    /* link invisível que cobre o card — acessível para IAs e buscadores */
+    .card { position: relative; }
+    .card-link {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      border-radius: 8px;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10,10,14,0.94);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .lightbox.active { display: flex; }
+
+    .lb-header {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      color: white;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 100%);
+    }
+
+    .lb-title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      max-width: calc(100% - 120px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .lb-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+    .lb-counter { font-size: 0.82rem; color: #bbb; }
+
+    .lb-close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.8;
+    }
+    .lb-close:hover { opacity: 1; }
+
+    .lb-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 64px 72px 52px;
+    }
+
+    .lb-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.6);
+      display: block;
+    }
+
+    .lb-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: white;
+      font-size: 1.6rem;
+      width: 44px;
+      height: 60px;
+      cursor: pointer;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s;
+    }
+
+    .lb-btn:hover { background: rgba(255,255,255,0.22); }
+    .lb-prev { left: 12px; }
+    .lb-next { right: 12px; }
+
+    .lb-dots {
+      position: absolute;
+      bottom: 14px;
+      left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    .lb-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.28);
+      cursor: pointer;
+      transition: background 0.15s, transform 0.15s;
+    }
+
+    .lb-dot.active { background: #EC8589; transform: scale(1.3); }
+
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px 14px 32px; }
+      .card-title { font-size: 0.7rem; }
+      .lb-stage { padding: 56px 44px 44px; }
+      .lb-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Exemplos de Carrosseis</h1>
+  <p>Dr. Leonardo Jacobsen · HORMOFEM · Saúde Hormonal Feminina</p>
+</header>
+
+<p class="shelf-label">16 carrosseis · 149 slides</p>
+
+<div class="grid">
+
+  <div class="card" onclick="openLB(0)">
+    <a class="card-link" href="colesterol-pos-menopausa/" title="Ver todos os slides: Colesterol Pós-Menopausa"></a>
+    <div class="card-cover">
+      <img src="colesterol-pos-menopausa/1.png" alt="Colesterol Pós-Menopausa" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Colesterol Pós-Menopausa</div>
+      <div class="card-count">8 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(1)">
+    <a class="card-link" href="dosar-progesterona/" title="Ver todos os slides: Dosar Progesterona"></a>
+    <div class="card-cover">
+      <img src="dosar-progesterona/1.png" alt="Dosar Progesterona" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Dosar Progesterona</div>
+      <div class="card-count">5 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(2)">
+    <a class="card-link" href="progestinas-androgenicas/" title="Ver todos os slides: Progestinas Androgênicas"></a>
+    <div class="card-cover">
+      <img src="progestinas-androgenicas/1.png" alt="Progestinas Androgênicas" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Progestinas Androgênicas</div>
+      <div class="card-count">12 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(3)">
+    <a class="card-link" href="protecao-endometrial/" title="Ver todos os slides: Proteção Endometrial"></a>
+    <div class="card-cover">
+      <img src="protecao-endometrial/1.png" alt="Proteção Endometrial" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Proteção Endometrial</div>
+      <div class="card-count">10 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(4)">
+    <a class="card-link" href="ims-cardiometabolic/" title="Ver todos os slides: IMS — Cardiometabolic"></a>
+    <div class="card-cover">
+      <img src="ims-cardiometabolic/1.png" alt="IMS — Cardiometabolic" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">IMS — Cardiometabolic</div>
+      <div class="card-count">10 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(5)">
+    <a class="card-link" href="estradiol-adesivo/" title="Ver todos os slides: Estradiol Adesivo"></a>
+    <div class="card-cover">
+      <img src="estradiol-adesivo/1.png" alt="Estradiol Adesivo" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Estradiol Adesivo</div>
+      <div class="card-count">10 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(6)">
+    <a class="card-link" href="gel-transdermico/" title="Ver todos os slides: Gel Transdérmico"></a>
+    <div class="card-cover">
+      <img src="gel-transdermico/1.png" alt="Gel Transdérmico" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Gel Transdérmico</div>
+      <div class="card-count">10 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(7)">
+    <a class="card-link" href="lipedema/" title="Ver todos os slides: Lipedema"></a>
+    <div class="card-cover">
+      <img src="lipedema/1.png" alt="Lipedema" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Lipedema</div>
+      <div class="card-count">11 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(8)">
+    <a class="card-link" href="p4-e-snc/" title="Ver todos os slides: P4 e SNC"></a>
+    <div class="card-cover">
+      <img src="p4-e-snc/1.png" alt="P4 e SNC" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">P4 e SNC</div>
+      <div class="card-count">9 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(9)">
+    <a class="card-link" href="th-e-endometriose/" title="Ver todos os slides: TH e Endometriose"></a>
+    <div class="card-cover">
+      <img src="th-e-endometriose/1.png" alt="TH e Endometriose" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">TH e Endometriose</div>
+      <div class="card-count">6 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(10)">
+    <a class="card-link" href="testosterona-sublingual/" title="Ver todos os slides: Testosterona Sublingual"></a>
+    <div class="card-cover">
+      <img src="testosterona-sublingual/1.png" alt="Testosterona Sublingual" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Testosterona Sublingual</div>
+      <div class="card-count">9 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(11)">
+    <a class="card-link" href="tirzepatida-trh/" title="Ver todos os slides: Tirzepatida TRH"></a>
+    <div class="card-cover">
+      <img src="tirzepatida-trh/1.png" alt="Tirzepatida TRH" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Tirzepatida TRH</div>
+      <div class="card-count">6 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(12)">
+    <a class="card-link" href="fda-tamanho-correto/" title="Ver todos os slides: FDA — Tamanho Correto"></a>
+    <div class="card-cover">
+      <img src="fda-tamanho-correto/1.png" alt="FDA — Tamanho Correto" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">FDA — Tamanho Correto</div>
+      <div class="card-count">17 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(13)">
+    <a class="card-link" href="progesterona/" title="Ver todos os slides: Progesterona"></a>
+    <div class="card-cover">
+      <img src="progesterona/1.png" alt="Progesterona" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Progesterona</div>
+      <div class="card-count">10 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(14)">
+    <a class="card-link" href="sangramento-trh/" title="Ver todos os slides: Por que o Sangramento na TRH Acontece"></a>
+    <div class="card-cover">
+      <img src="sangramento-trh/1.png" alt="Por que o Sangramento na TRH Acontece" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Por que o Sangramento na TRH Acontece</div>
+      <div class="card-count">7 slides</div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openLB(15)">
+    <a class="card-link" href="sangramento-reposicao-hormonal/" title="Ver todos os slides: Sangramento durante a Reposição Hormonal"></a>
+    <div class="card-cover">
+      <img src="sangramento-reposicao-hormonal/1.png" alt="Sangramento durante a Reposição Hormonal" loading="lazy">
+    </div>
+    <div class="card-info">
+      <div class="card-title">Sangramento durante a Reposição Hormonal</div>
+      <div class="card-count">9 slides</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-header">
+    <span class="lb-title" id="lb-title"></span>
+    <div class="lb-right">
+      <span class="lb-counter" id="lb-counter"></span>
+      <button class="lb-close" onclick="closeLB()">&#x2715;</button>
+    </div>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <img class="lb-img" id="lb-img" src="" alt="">
+  </div>
+  <button class="lb-btn lb-prev" onclick="move(-1)">&#8249;</button>
+  <button class="lb-btn lb-next" onclick="move(1)">&#8250;</button>
+  <div class="lb-dots" id="lb-dots"></div>
+</div>
+
+<script>
+const carrosseis = [
+  { slug: "colesterol-pos-menopausa",        title: "Colesterol Pós-Menopausa",                    count: 8  },
+  { slug: "dosar-progesterona",              title: "Dosar Progesterona",                           count: 5  },
+  { slug: "progestinas-androgenicas",        title: "Progestinas Androgênicas",                     count: 12 },
+  { slug: "protecao-endometrial",            title: "Proteção Endometrial",                         count: 10 },
+  { slug: "ims-cardiometabolic",             title: "IMS — Cardiometabolic",                        count: 10 },
+  { slug: "estradiol-adesivo",               title: "Estradiol Adesivo",                            count: 10 },
+  { slug: "gel-transdermico",                title: "Gel Transdérmico",                             count: 10 },
+  { slug: "lipedema",                        title: "Lipedema",                                     count: 11 },
+  { slug: "p4-e-snc",                        title: "P4 e SNC",                                     count: 9  },
+  { slug: "th-e-endometriose",               title: "TH e Endometriose",                            count: 6  },
+  { slug: "testosterona-sublingual",         title: "Testosterona Sublingual",                      count: 9  },
+  { slug: "tirzepatida-trh",                 title: "Tirzepatida TRH",                              count: 6  },
+  { slug: "fda-tamanho-correto",             title: "FDA — Tamanho Correto",                        count: 17 },
+  { slug: "progesterona",                    title: "Progesterona",                                 count: 10 },
+  { slug: "sangramento-trh",                 title: "Por que o Sangramento na TRH Acontece",        count: 7  },
+  { slug: "sangramento-reposicao-hormonal",  title: "Sangramento durante a Reposição Hormonal",     count: 9  },
+];
+
+let current = { idx: 0, slide: 0 };
+
+function openLB(cardIdx, slide = 0) {
+  current.idx = cardIdx;
+  current.slide = slide;
+  const c = carrosseis[cardIdx];
+  document.getElementById('lb-title').textContent = c.title;
+  renderDots(c.count);
+  setSlide(slide);
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLB() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function setSlide(n) {
+  const c = carrosseis[current.idx];
+  current.slide = (n + c.count) % c.count;
+  document.getElementById('lb-img').src = `${c.slug}/${current.slide + 1}.png`;
+  document.getElementById('lb-counter').textContent = `${current.slide + 1} / ${c.count}`;
+  document.querySelectorAll('.lb-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === current.slide);
+  });
+}
+
+function move(dir) { setSlide(current.slide + dir); }
+
+function renderDots(count) {
+  const dots = document.getElementById('lb-dots');
+  dots.innerHTML = '';
+  for (let i = 0; i < count; i++) {
+    const d = document.createElement('div');
+    d.className = 'lb-dot';
+    d.onclick = () => setSlide(i);
+    dots.appendChild(d);
+  }
+}
+
+let touchStartX = 0;
+document.getElementById('lb-stage').addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+document.getElementById('lb-stage').addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].screenX;
+  if (Math.abs(diff) > 40) move(diff > 0 ? 1 : -1);
+});
+
+document.addEventListener('keydown', e => {
+  const lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('active')) return;
+  if (e.key === 'ArrowRight') move(1);
+  if (e.key === 'ArrowLeft') move(-1);
+  if (e.key === 'Escape') closeLB();
+});
+
+document.getElementById('lightbox').addEventListener('click', e => {
+  if (e.target === document.getElementById('lightbox') ||
+      e.target === document.getElementById('lb-stage')) closeLB();
+});
+</script>
+</body>
+</html>
