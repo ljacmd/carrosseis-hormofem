@@ -63,7 +63,7 @@ _Função: explicar o mecanismo (matriz de camada única) e a dose nominal (25�
 > **HORMOFEM**
 > Terapia Hormonal Feminina
 >
-> O único curso de **Terapia Hormonal** que esina conceitos fundamentais de **farmacologia** para que médicos prescrevam hormônios de maneira **segura e eficaz,** por todas as vias.
+> O único curso de **Terapia Hormonal** que ensina conceitos fundamentais de **farmacologia** para que médicos prescrevam hormônios de maneira **segura e eficaz,** por todas as vias.
 >
 > **3ª Edição**
 > **Data:** 03 e 04 de Maio/2025
@@ -71,7 +71,7 @@ _Função: explicar o mecanismo (matriz de camada única) e a dose nominal (25�
 >
 > **Inscreva-se Agora!**
 
-_Função: interrupção publicitária do curso no meio do carrossel. Posiciona o HORMOFEM como autoridade ("único curso", "por todas as vias") antes de retomar o conteúdo técnico. Obs.: "esina" e "ensina" — erro de digitação preservado verbatim._
+_Função: interrupção publicitária do curso no meio do carrossel. Posiciona o HORMOFEM como autoridade ("único curso", "por todas as vias") antes de retomar o conteúdo técnico._
 
 ---
 
@@ -101,13 +101,13 @@ _Função: trazer a base farmacocinética com 3 fatos em bullets (pico, difusão
 >
 > Estudos de farmacocinética também mostram que:
 >
-> > **A absorção de estadiol transdérmico pode variar 7 vezes com o adesivo**
+> > **A absorção de estradiol transdérmico pode variar 7 vezes com o adesivo**
 >
 > Por isso, torna-se fundamental saber re-avaliar após o início do tratamento, e o conceito de dose mínima ou dose máxima é muito relativo.
 >
 > No **HORMOFEM** usamos o termo **DOSE EFICAZ**
 
-_Função: introduzir a variabilidade de absorção (até 7×) como argumento central; conclui que "dose mínima/máxima é relativo" e cunha o termo de marca DOSE EFICAZ. Obs.: "estadiol" — erro de digitação preservado verbatim._
+_Função: introduzir a variabilidade de absorção (até 7×) como argumento central; conclui que "dose mínima/máxima é relativo" e cunha o termo de marca DOSE EFICAZ._
 
 ---
 
@@ -174,9 +174,9 @@ _Função: balancear a via apresentando suas limitações práticas em bullets �
 > ✓ Construa seu próprio conhecimento!
 > ✓ Tenha acesso a todas as referências!
 > ✓ Entenda a farmacocinética de todas as vias!
-> ✓ Tenha  nossa apostila resumida em mãos.
+> ✓ Tenha nossa apostila resumida em mãos.
 
-_Função: virar a chave emocional ("Eu te entendo", "ninguém me ensinou isso") e listar promessas de valor com ✓; ponte do conteúdo para a oferta. Preserva símbolos ✗/✓ e duplo espaço em "Tenha  nossa"._
+_Função: virar a chave emocional ("Eu te entendo", "ninguém me ensinou isso") e listar promessas de valor com ✓; ponte do conteúdo para a oferta. Preserva símbolos ✗/✓._
 
 ---
 

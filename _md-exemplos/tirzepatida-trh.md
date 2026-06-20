@@ -47,7 +47,7 @@ _Função: gancho em CAIXA-ALTA com o fármaco-tema; pergunta retórica que prov
 >
 > ◆ Terapias com **Incretinas** (semaglutida, tirzepatida) são cada vez mais utilizadas.
 >
-> ◆ Como isso impacta pode impactar na terapia de reposição hormonal (TRH)?
+> ◆ Como isso pode impactar na terapia de reposição hormonal (TRH)?
 >
 > *Use of incretin-based therapies in women using hormone replacement therapy (HRT)*
 >
@@ -115,13 +115,13 @@ _Função: traduzir o mecanismo em risco clínico (proteção endometrial insufi
 > **RECOMENDAÇÕES PRÁTICAS DA BMS**
 >
 > **Estradiol**
-> ● Via Transdérmica (↓TEV e ↓Interação Farcacocinética)
+> ● Via Transdérmica (↓TEV e ↓Interação Farmacocinética)
 >
 > **Progestagênios**
-> ● **DIU-Levornogestrel:** Opção mais segura
+> ● **DIU-Levonorgestrel:** Opção mais segura
 > ● **Progesterona Via Vaginal:** sem alteração
 > ● **Progestagênios Via Oral:**
-> → Considerar trocar por DIU-Levornogestrel
+> → Considerar trocar por DIU-Levonorgestrel
 > → Aumentar dose
 
 _Função: oferecer a conduta acionável da BMS — priorizar vias não-orais (estradiol transdérmico, DIU-LNG, progesterona vaginal) que escapam da interação no esvaziamento gástrico; lista hierarquizada por segurança._

@@ -239,7 +239,7 @@ _Função: recapitular conclusões em tópicos (agrupamento, gap de rastreio, do
 - **Figura:** ✅ logo HORMOFEM + fotos de evento/palestra e materiais da edição
 - **Citação:** — (assinado: @drleonardojacobsen)
 
-> **TRH MENOPAUSA E LIPEDEDEMA**
+> **TRH MENOPAUSA E LIPEDEMA**
 >
 > • A terapia hormonal da menopausa **em mulheres com lipedema** exige atenção redobrada ao perfil ginecológico, às vias hormonais e aos mecanismos inflamatórios e esteroide-dependentes da doença.
 >

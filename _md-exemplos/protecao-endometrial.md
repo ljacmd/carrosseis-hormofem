@@ -125,9 +125,9 @@ _Função: introduzir a 2ª variável com três regimes e seus riscos relativos 
 > - O uso prolongado de THM sequencial por **mais de 5 anos** pode estar associado a um pequeno aumento no risco de hiperplasia endometrial e câncer endometrial.
 >
 > **Insight para a Prática Clínica:**
-> Após 5 anos de uso sequencial, obrigatóriamente deve-se trocar o esquema de administração dos progestagênio para contínuo, mesmo que a paciente esteja bem adaptada ao esquema cíclico.
+> Após 5 anos de uso sequencial, obrigatoriamente deve-se trocar o esquema de administração dos progestagênio para contínuo, mesmo que a paciente esteja bem adaptada ao esquema cíclico.
 
-_Função: estender "tempo" para o horizonte de anos (não só dias/mês). Recomendação prática categórica: converter sequencial → contínuo após 5 anos. "obrigatóriamente" transcrito verbatim com o acento como na imagem._
+_Função: estender "tempo" para o horizonte de anos (não só dias/mês). Recomendação prática categórica: converter sequencial → contínuo após 5 anos._
 
 ---
 
@@ -187,7 +187,7 @@ _Função: fechar a 3ª característica com citação direta entre aspas reforç
 >
 > **Potência dos Progestagênios**
 > - Eficácia endometrial da progesterona é menor que progestinas;
-> - Progestinas androgênica são as mais potentes.
+> - Progestinas androgênicas são as mais potentes.
 >
 > **Tempo de Uso**
 > - Mínimo de duração: 12 dias por mês;

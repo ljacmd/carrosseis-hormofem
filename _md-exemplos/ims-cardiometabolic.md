@@ -196,7 +196,7 @@ _Função: interpretação autoral da diretriz; corrige a narrativa pós-WHI e e
 > - Obesidade visceral
 > - Estilo de vida
 > - Contraindicações
-> - Tipo e ia de administração
+> - Tipo e via de administração
 >
 > Não se trata de "sim ou não" para THM, mas **para quem, quando, quanto e por qual via**.
 

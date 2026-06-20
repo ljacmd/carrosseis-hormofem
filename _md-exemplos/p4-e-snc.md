@@ -97,9 +97,9 @@ _Função: contraste direto com o slide 3 (mesmo gráfico, outra via). Mostra qu
 
 > **Fisiologia Hormonal**
 >
-> A A mucosa vaginal não possui as **enzimas 5α e 5β redutases** necessárias para o metabolismo da progesterona em alopregnanolona e 5β-pregnanolona.
+> A mucosa vaginal não possui as **enzimas 5α e 5β redutases** necessárias para o metabolismo da progesterona em alopregnanolona e 5β-pregnanolona.
 >
-> É por isso que, se buscamos os **efeitos sedativos, ansiolíticos, analgésicos e hipnóticos** da progesterona no cérebro, a via de adminisrção precisar ser ORAL.
+> É por isso que, se buscamos os **efeitos sedativos, ansiolíticos, analgésicos e hipnóticos** da progesterona no cérebro, a via de administração precisa ser ORAL.
 >
 > Por isso é necessário conhecer os estudos de **farmacocinética e farmacodinâmica** das diferentes vias de administração.
 

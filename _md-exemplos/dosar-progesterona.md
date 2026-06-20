@@ -71,7 +71,7 @@ _Função: extrair o dado-chave do gráfico (retorno ao basal em 8-12 horas) e d
 
 > **PORTANTO:**
 >
-> A progesterona adminsitrada pela via oral faz **pico e e vale**, é rapidamente metabolizada e **retorna a níveis basais em 8-12 horas.**
+> A progesterona administrada pela via oral faz **pico e vale**, é rapidamente metabolizada e **retorna a níveis basais em 8-12 horas.**
 >
 > **Insight para a Prática Clínica:**
 > Se uma paciente usar a progesterona as 21h, antes de dormir, é normal que ao coletar o exame pela manhã seus níveis séricos estejam baixos!

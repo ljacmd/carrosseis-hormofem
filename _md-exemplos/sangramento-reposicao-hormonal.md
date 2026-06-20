@@ -66,7 +66,7 @@ _Função: dimensiona a frequência (60%, primeiros 6 meses) e contrapõe erro �
 
 > **FISIOPATOLOGIA:
 > POR QUE SANGRA? ENTENDA
-> AORIGEM PARA TRATAR A CAUSA**
+> A ORIGEM PARA TRATAR A CAUSA**
 >
 > Diferente da menstruação (descamação total), o sangramento na **THM** é frequentemente **focal e vascular**.
 >
@@ -76,7 +76,7 @@ _Função: dimensiona a frequência (60%, primeiros 6 meses) e contrapõe erro �
 >
 > ***Insight:*** Endométrio *atrófico* também sangra por fragilidade vascular, não apenas o endométrio espessado.
 
-_Função: redefine o sangramento da THM como "focal e vascular" (vs descamação total) e nomeia os mecanismos (microvascular, MMPs); insight contraintuitivo (atrófico também sangra). Obs.: o slide traz "AORIGEM" colado, transcrito verbatim._
+_Função: redefine o sangramento da THM como "focal e vascular" (vs descamação total) e nomeia os mecanismos (microvascular, MMPs); insight contraintuitivo (atrófico também sangra)._
 
 ---
 
@@ -86,17 +86,17 @@ _Função: redefine o sangramento da THM como "focal e vascular" (vs descamaçã
 
 > **FISIOPATOLOGIA:
 > POR QUE SANGRA? ENTENDA
-> AORIGEM PARA TRATAR A CAUSA**
+> A ORIGEM PARA TRATAR A CAUSA**
 >
 > Diferente da menstruação (descamação total), o sangramento na **THM** é frequentemente **focal e vascular**.
 >
 > ● Novos capilares microvasculares frágeis desenvolvidos no endométrio atrófico, facilitando o sangramento nos primeiros meses de TH.
 >
-> ● Com o uso continuado e prolongado, a estrutura normal da membrana basal dos vasos normaliza é restaurada, reduzindo a probabilidade de sangramento de escape nos meses seguintes.
+> ● Com o uso continuado e prolongado, a estrutura normal da membrana basal dos vasos é restaurada, reduzindo a probabilidade de sangramento de escape nos meses seguintes.
 >
 > ***Insight:*** Endométrio *atrófico* também sangra por fragilidade vascular, não apenas o endométrio espessado.
 
-_Função: continuação do slide 3 (mantém o título) ilustrada pela figura do capilar; explica a evolução temporal — neovasos frágeis no início, normalização da membrana basal com o uso prolongado. Obs.: frase "a estrutura... normaliza é restaurada" transcrita verbatim, com redundância presente na arte._
+_Função: continuação do slide 3 (mantém o título) ilustrada pela figura do capilar; explica a evolução temporal — neovasos frágeis no início, normalização da membrana basal com o uso prolongado._
 
 ---
 
@@ -130,9 +130,9 @@ _Função: define a USTV como ferramenta de triagem e o corte ≤ 5mm como tranq
 >
 > **2. Proporcionalidade:** Dose alta de estradiol exige dose maior de progestagênio. Não deixe o estrogênio "sobrar".
 >
-> **3. Via de administração:** Mudar para via oral ou trocar o progestagênio (ex: DIU-LNG 52mg) pode resolver sangramentos persistentes,.
+> **3. Via de administração:** Mudar para via oral ou trocar o progestagênio (ex: DIU-LNG 52mg) pode resolver sangramentos persistentes.
 
-_Função: passo conservador antes da investigação invasiva ("ANTES DE INVADIR"); checklist de 3 ajustes (adesão, proporcionalidade, via) com exemplo concreto (DIU-LNG 52mg). Obs.: vírgula final dupla "persistentes,." transcrita verbatim._
+_Função: passo conservador antes da investigação invasiva ("ANTES DE INVADIR"); checklist de 3 ajustes (adesão, proporcionalidade, via) com exemplo concreto (DIU-LNG 52mg)._
 
 ---
 
@@ -166,11 +166,11 @@ _Função: lista os gatilhos de alarme para biópsia (cortes por regime, persist
 >
 > ● **Consenso**: Não se recomenda rastreamento em assintomáticas.
 >
-> ● <u>Corte de Segurança</u>: A maioria das recomendações indica investigção apenas se EE ≥ 10 mm em assintomáticas.
+> ● <u>Corte de Segurança</u>: A maioria das recomendações indica investigação apenas se EE ≥ 10 mm em assintomáticas.
 >
 > ***Conduta:*** Entre 4mm e 10mm, individualize pelos fatores de risco (Obesidade, Diabetes).
 
-_Função: trata o cenário oposto (assintomática com achado de USG); evita o sobrediagnóstico — não rastrear assintomáticas, corte ≥ 10mm, zona cinzenta 4–10mm individualizada. Obs.: "investigção" transcrito verbatim (sem o "a")._
+_Função: trata o cenário oposto (assintomática com achado de USG); evita o sobrediagnóstico — não rastrear assintomáticas, corte ≥ 10mm, zona cinzenta 4–10mm individualizada._
 
 ---
 

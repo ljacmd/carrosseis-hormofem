@@ -69,7 +69,7 @@ _Função: gancho que apresenta a alcunha popular ("bomba") e a contrapõe a "fa
 >
 > **Progestágenos Sintéticos** — Estruturalmente relacionado a Testosterona
 >
-> **Derivados 13-Norestosterona (Estranos C-18)**
+> **Derivados 19-Nortestosterona (Estranos C-18)**
 > - Noretisterona (NET)
 > - Ac. Noretisterona (NETA)
 > - Tibolona
@@ -158,7 +158,7 @@ _Função: classificar a atividade androgênica em rótulos (High/Medium/Low/Ver
 
 ---
 
-## SLIDE 6 · Exemplo · Levornogestrel
+## SLIDE 6 · Exemplo · Levonorgestrel
 - **Figura:** ✅ estrutura química do levonorgestrel + balão "Ninguém chama de bomba 😅"
 - **Citação:** Clin Ther. 1986;8(6):607-18 · Endocr Rev. 2013 Apr;34(2):171-208 · Clin Med. 2023 May 10;12(10):3388
 

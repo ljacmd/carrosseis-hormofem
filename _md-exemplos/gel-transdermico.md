@@ -44,13 +44,13 @@ _Função: gancho de impacto com a estatística "1 em cada 4". Título em CAIXA-
 > **OBJETIVO DO ESTUDO**
 > Explorar a variação nos níveis séricos de estradiol e identificar mulheres com má absorção (níveis subterapêuticos).
 >
-> **METODOLODIA**
+> **METODOLOGIA**
 > Realizado em uma clínica especializada com mais de 1.500 pacientes na perimenopausa ou menopausa.
 >
 > > **Critério 1**: Uso de estradiol transdérmico por ≥3 meses.
 > > **Critério 2**: Coleta de sangue para medir níveis séricos.
 
-_Função: apresentar o estudo, o objetivo e a metodologia em três blocos rotulados; critérios de inclusão em caixa tracejada. (Nota: "METODOLODIA" grafado assim no slide.)_
+_Função: apresentar o estudo, o objetivo e a metodologia em três blocos rotulados; critérios de inclusão em caixa tracejada._
 
 ---
 

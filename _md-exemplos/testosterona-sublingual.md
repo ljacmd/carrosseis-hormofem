@@ -39,14 +39,14 @@ _Função: gancho em forma de pergunta provocativa que opõe "Evidência Cientí
 - **Figura:** ✅ ilustração de pilha de livros + selo HORMOFEM 3ª edição
 - **Citação:** —
 
-> De vez em quando surgem algumas "modas" na TRH feminina, e a bola da vez parede ser a reposição de Testosterona pela <u>via Sublingual.</u>
+> De vez em quando surgem algumas "modas" na TRH feminina, e a bola da vez parece ser a reposição de Testosterona pela <u>via Sublingual.</u>
 >
 > **AUMENTO NAS PRESCRIÇÕES:**
 >
 > Como percebi um aumento crescente nas prescrições, e como nunca li nada a respeito nos principais estudos do tema, me perguntei:
 >
 > • Existem estudos clínicos?
-> • Qual os parâmetros de de farmacocinética?
+> • Qual os parâmetros de farmacocinética?
 >
 > Fui pesquisar e encontrei um estudo publicado no *Psychoneuroendocrinology* (2012) e compartilho com vocês os principais achados.
 
@@ -62,7 +62,7 @@ _Função: situar a tendência ("a bola da vez"), criar identificação ("me per
 >
 > **ESTUDO:**
 >
-> • Rando mizado, cego para o investigador, cruzado e controlado por placebo.
+> • Randomizado, cego para o investigador, cruzado e controlado por placebo.
 > • 16 mulheres pré-menopáusicas saudáveis;
 > • **Testosterona Sublingual em 3 doses:**
 >   ➡ 0,25 mg | 0,50 mg | 0,75 mg

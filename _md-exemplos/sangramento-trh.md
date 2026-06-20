@@ -48,7 +48,7 @@ _Função: capa de marca. Logo da série "Manejo de Sangramento", título do tem
 >
 > A amenorreia durante a TRH depende do **equilíbrio** entre o efeito estrogênico e o efeito progestogênico da TH no endométrio.
 >
-> ● **Efeito progestogênico insuficiente:** proliferação endometrial, sangramento e possivel hiperplasia.
+> ● **Efeito progestogênico insuficiente:** proliferação endometrial, sangramento e possível hiperplasia.
 >
 > ● **Efeito progestogênico excessivo:** sangramento por atrofia.
 

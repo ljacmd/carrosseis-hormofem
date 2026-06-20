@@ -40,7 +40,7 @@ _Função: gancho que apresenta o dilema central (operar ou não antes/durante a
 - **Figura:** ❌ não
 - **Citação:** —
 
-> • A taxa de recorrência da endometriose na pós menopausa é de **2-5%.**
+> • A taxa de recorrência da endometriose na pós-menopausa é de **2-5%.**
 >
 > • A presença de tecido endometrial residual é fator de risco para recorrência da doença.
 >
@@ -82,7 +82,7 @@ _Função: apresentar o polo oposto (cirurgia ampla sempre) com citação; contr
 
 > Você quer aprender a:
 >
-> ✓ Prescer a TRH para pacientes com Endometriose...
+> ✓ Prescrever a TRH para pacientes com Endometriose...
 >
 > ✓ Saber escolher a melhor via e dose de Estradiol...
 >
@@ -90,7 +90,7 @@ _Função: apresentar o polo oposto (cirurgia ampla sempre) com citação; contr
 >
 > ✓ Saber qual a dose do progestagênio ideal para proteção endometrial...
 >
-> ✓ Saber acompanhar e diminuir os riscos de seuas pacientes?
+> ✓ Saber acompanhar e diminuir os riscos de suas pacientes?
 
 _Função: converter o dilema em dores práticas do médico-alvo; lista de aprendizados com checkmarks que antecipa o currículo da MasterClass._
 
